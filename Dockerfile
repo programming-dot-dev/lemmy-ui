@@ -26,7 +26,8 @@ COPY src src
 RUN echo "export const VERSION = '$(git describe --tag)';" > "src/shared/version.ts"
 
 RUN yarn --production --prefer-offline
-RUN yarn build:prod
+RUN yarn add webpack-bundle-analyzer
+RUN yarn build:prod --progress
 
 # Prune the image
 RUN node-prune /usr/src/app/node_modules
