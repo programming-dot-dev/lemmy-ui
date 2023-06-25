@@ -1,0 +1,3 @@
+[submodule "lemmy-translations"]
+	path = lemmy-translations
+	url = https://github.com/Ategon/Lemmy-Translations
