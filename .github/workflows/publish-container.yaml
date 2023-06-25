@@ -13,8 +13,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - run: ls -al
-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
 
